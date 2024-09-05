@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jade's Page</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            padding-bottom: 20px;
+            background: linear-gradient(-45deg, #a8e6cf, #56ab2f, #b8e994, #4ca1af);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+        p {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 24px;
+            color: #492f38;
+            text-align: center;
+        }
+        .p0 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 70px;
+            color: #492f38;
+            text-align: center;
+            margin: 0;
+            margin-top: 150px; /* 确保文本在浮动菜单下面显示 */
+        }
+        .top-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 50px;
+            background: linear-gradient(to bottom, rgba(152, 255, 152, 0.7), rgba(152, 255, 152, 0.1));
+            color: black;
+            padding: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        .font0{
+            font-family: 'Brush Script MT', cursive;
+            font-size: 50px;
+            color: #492f38;
+            text-align: center;
+            margin: 10px 15px 10px 25px;
+        }
+        .content-card {
+            margin-top: 40px;
+            width: 50vw;
+            padding: 20px;
+            background-color: #C9F0D5;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .pfp {
+            width: 150px;
+            height: 150px;
+            border-radius: 30%;
+        }
+        .about-me {
+            margin-top: 40px;
+            width: 50vw;
+            padding: 20px;
+            background-color: #BEE4E5;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .pf {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+        .hobby {
+            margin-top: 40px;
+            width: 50vw;
+            padding: 20px;
+            background-color: #D3F6F2;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        .hobby-images {
+            display: flex;
+            flex-wrap: wrap; /* 允许换行 */
+            justify-content: center; /* 图片居中对齐 */
+            gap: 20px; /* 图片之间的间距 */
+        }
+        .hobby-images div {
+            flex: 1 1 calc(50% - 20px); /* 每行两个图片，减去间距 */
+            text-align: center;
+        }
+        .link{
+            margin-top: 40px;
+            width: 50vw;
+            padding: 20px;
+            background-color: #B4E7CC;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+            font-family: 'Brush Script MT', cursive;
+            padding: 15px 32px; /* 内边距 */
+            text-align: center; /* 文字居中 */
+            text-decoration: none; /* 去掉下划线 */
+            display: inline-block; /* 行内块元素 */
+            font-size: 50px; /* 字体大小 */
+            margin: 20px; /* 外边距 */
+            cursor: pointer; /* 鼠标悬停时显示手形光标 */
+            border-radius: 8px; /* 圆角边框 */
+            margin:30px 50px;
+            border-radius: 20px;
+        }
+        .ll{
+            color: #9993ED;
+            font-size: 25px;
+            font-family: "Times New Roman";
+            font-weight: bold;
+            padding:10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top-fixed">
+        <a href="#home" class="ll">Home</a>
+        <a href="#About me" class="ll">About me</a>
+        <a href="#hobby" class="ll">Hobby</a>
+        <a href="#link" class="ll">Link</a>
+
+    </div>
+    <p class="p0">
+             Welcome to Jade's page!
+    </p>
+    <div class="content-card" id="home">
+        <img src="https://plus.unsplash.com/premium_photo-1661872810729-0a3185717c71?q=80&w=2053&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="PFP" class="pfp">
+        <p class="font0">
+            Self-introduction
+        </p>
+        <p>
+            Hello, I'm Jade and I am currently studying for a postgraduate degree in Information Technology at the
+            University of New South Wales (UNSW). I am passionate about programming and software development. When I'm not
+            studying, I also have one hobby(👇🏻) which keeps me creative and alive.
+        </p>
+    </div>
+    <br>
+    <div class="about-me" id="About me">
+        <p class="font0">
+            About me
+        </p>
+        <p>
+            name: Jade<br>
+            Age: 23<br>
+            degree: first year of master degree<br>
+            fav color: guess?<br>
+            fav animals: Latte and Mocha (2 lovely cats)<br>
+        </p>
+    </div>
+    <div class="hobby" id="hobby">
+        <p class="font0">
+            Hobby
+        </p>
+        <div class="hobby-images">
+            <div>
+                <img src="https://images.unsplash.com/photo-1507726420169-08dc80118357?q=80&w=1929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pf" alt="Skiing">
+                <p>Skiing</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1542309174-2d0c02b8ff07?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pf" alt="Swimming">
+                <p>Swimming</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1491830356944-3e5642d6517f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pf" alt="Photography">
+                <p>Photography</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1721760886493-61c47c1caec9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pf" alt="Badminton">
+                <p>Badminton</p>
+            </div>
+        </div>
+    </div>
+    <div class="link" id="link">
+        <p class="font0">
+            My Link
+        </p>
+        <a href="https://github.com/Zzy0085" class="button" target="_blank">GitHub</a>
+        <a href="https://discord.com/channels/@me" class="button" target="_blank">Discord</a>
+    </div>
+    <br>
+    <br>
+</body>
+</html>
